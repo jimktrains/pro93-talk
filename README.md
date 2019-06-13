@@ -49,10 +49,40 @@ MM = Mode
 | Motorola (need to confirm) | 0b10 (2) |
 | EDACS | 0b11 (2) |
 
-The Encoded Frequency is the first 3 bytes of a 4-byte little-endian encoded integer. The encoded frequency
-can be multiplied by 250 to get the display frequency. `090909` is an invalid step and used as a marker for
-when a frequency isn't set.
+The Encoded Frequency is the first 3 bytes of a 4-byte little-endian encoded
+integer. The encoded frequency can be multiplied by 250 to get the display
+frequency. `090909` is an invalid step and used as a marker for when a
+frequency isn't set.
 
 ### Memory Slot Labels
+
+12 bytes of ASCII text. 12 0xff bytes represents an unset text-tag.
+
+### TalkGroup IDs
+
+2 bytes (Little Endian encoded unsigned short) for each of the 100 talkgroups
+in each bank, followed by 24 bytes per bank. (All-in-all 224 bytes per bank.)
+
+In my dump, each bank is followed by
+
+    000000000000000000647c01c0c71800d007000000000000
+
+### Trunking Something?
+
+808 bytes of something? In my dump it's as follows
+
+    ff00
+    8253 3400 x 10
+    ffff x 80
+    ff00
+    64d6 0600 d6dc 0600
+    ffff x 96
+    ff01
+    4ce2 0800
+    ffff x 98
+    ff00
+    ffff x 100
+
+### TalkGroup Text Tags
 
 12 bytes of ASCII text. 12 0xff bytes represents an unset text-tag.

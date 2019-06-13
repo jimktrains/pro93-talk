@@ -56,7 +56,7 @@ with open(fn, 'rb') as f:
     # 8253 3400 x 10, so this might be some kind of settings for each bank?
     # ffff x 80
     # ff00
-    # 64d6 0600 x 2
+    # 64d6 0600 d6dc 0600
     # ffff x 96
     # ff01 
     # 4ce2 0800
