@@ -25,9 +25,15 @@ of the image) and is 20256 bytes long.
 
 * Memory Slot config (4 bytes * 300)
 * Memory Slot labels (12 bytes * 300)
-* TalkGroup Slot Config (unsure; havn't decoded)
-* TalkGroup Slot labels (unsure; havn't decoded)
+* TalkGroup Slot Config (((100\*2 bytes) + 24) \* 10)
+* TalkGroup Something? (808 bytes)
+* TalkGroup Slot labels (12 bytes \* 1000)
 * Scanner settings (unsure; havn't decoded)
+  * The limit search label is here (confirmed)
+  * I _think_ that the bank labels are here
+  * There is an extra 12 spaces which might be a label for something?
+  * Limit search upper and lower limits (confirmed)
+  * Priority channel (confirmed)
 
 ### Memory Slot Config
 
