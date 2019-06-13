@@ -41,8 +41,39 @@ def extract_bits(b, first, last):
     # we need to shift the result down into the least sig bits.
     return (b & mask) >> (7 - last)
 
+def set_bits(b, first, last, v):
+    """
+###################################################################
+#
+# Extract a bit field from an 8-bit byte.
+#
+# Inputs:
+#  byte  -an 8 bit byte
+#  first  -first bit number
+#  last  -last bit number (inclusive)
+#
+# Returns:
+#  Integer value 0 - 255
+#
+# Notes:
+#  Bits are numbered from left to right, i.e.,
+#  01234567 with bit 0 being most significant
+#
+#  first <= last
+###################################################################
+"""
+    # last + 1 because it's an inclusive it range and the `range` function
+    # is exclusive
+    #
+    # 7-i because we're numbering the bits from mostsig to leastsig
+    mask = sum([pow(2,7-i) for i in range(first, last+1)])
+
+    # 7 - last because we're numbering from mostisg to leastsig and
+    # we need to shift the result down into the least sig bits.
+    return b | ((v & (mask >> (7-last))) << (7 - last))
+
 class freq_memory:
-    def __init__(self, mode, atten, delay, lockout, freq, unused):
+    def __init__(self, freq, mode=None, atten=None, delay=None, lockout=None, unused=None):
         self.mode = mode
         self.atten = atten
         self.delay = delay
@@ -63,6 +94,12 @@ class freq_memory:
         if self.lockout:
             r += "L"
         return r.strip()
+    def encode(self):
+        f = int(self.freq / 250)
+        bs = bytearray(struct.pack("<L", f))
+        bs[3] = 0
+        return bs
+
 
     @classmethod
     def decode(cls, bs):
@@ -87,7 +124,10 @@ class freq_memory:
         # Bytes 090909 for the frequency represent an unused frequency.
         # 148.034250 isn't a 5KHz, 6.5KHz, or 7.5KHz step and therefore
         # isn't valid. (Steps obtained from the User Manual, pg 81.)
-        unused = freq == 148034250
+        #
+        # 0xffff is used as the unused in the lockouts section. 4THz isn't
+        # within range of this scanner.
+        unused = freq in [148034250, 4194303750]
 
         return cls(mode=mode, atten=atten, delay=delay, lockout=lockout, freq=freq, unused=unused)
 

@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+import sys
+import decoder
+
+
+# remove the first which is the program name
+sys.argv.pop(0)
+
+for i in sys.argv:
+    f = float(i) * 1000000
+    fm = decoder.freq_memory(freq=f)
+    print(i + " => " + fm.encode().hex())
