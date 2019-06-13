@@ -99,7 +99,7 @@ The ordering seems to be
 
 ### CB Lockout
 
-Each CB channel is represented by 1 byte. MSB is lockout, bottom 2 LSB are
+Each CB channel is represented by 1 byte. 4th MSB is lockout, bottom 2 LSB are
 mode. I assume attenuation and delay are in their usual spots.
 
 ### Unsure?
