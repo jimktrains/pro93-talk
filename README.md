@@ -142,3 +142,9 @@ presume it's always "shown" but spaces make it invisible.
 
 ### Unsure?
 46 bytes, not sure?
+
+## Example
+
+See
+[pro93-dump-2019-06-13T05:09:06.494256.parsed](pro93-dump-2019-06-13T05:09:06.494256.parsed)
+for an example of the output of the pro93-dump-explore program.

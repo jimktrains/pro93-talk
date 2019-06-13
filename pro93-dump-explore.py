@@ -18,6 +18,11 @@ search_lockout_max = 50
 search_lockout_count = []
 search_lockout_freq = []
 
+cb_channels_count = 40
+cb_channels = []
+marine_channels_count = 60
+marine_channels = []
+
 sectionA = []
 
 memory = []
@@ -25,13 +30,21 @@ text_tags = []
 tg_memory = []
 tg_text_tags = []
 
+limit_search_low = None
+limit_search_high = None
+
+priority = None
+
+bank_text_tags = []
+limit_search_text_tag = None
+
 fn = 'pro93-dump-2019-06-10T13:09:35.841920.bin'
+fn = 'pro93-dump-2019-06-13T05:09:06.494256.bin'
 with open(fn, 'rb') as f:
 
     for i in range(channels):
         bs = f.read(4)
-        sectionA.append(bs)
-        memory.append(decoder.freq_memory.decode(bs))
+        memory.append(decoder.channel.decode(bs))
 
 
     for i in range(channels):
@@ -63,13 +76,47 @@ with open(fn, 'rb') as f:
         freqs = []
         for j in range(search_lockout_max):
             bs = f.read(4)
-            freqs.append(decoder.freq_memory.decode(bs))
+            freqs.append(decoder.channel.decode(bs))
         search_lockout_freq.append(freqs)
-
 
     for i in range(talkgroups):
         bs = f.read(12)
         tg_text_tags.append(decoder.text_tag.decode(bs))
+
+    for i in range(cb_channels_count):
+        bs = f.read(1)
+        cb_channels.append(decoder.chan_flags.decode(bs))
+
+    # Unsure
+    bs = f.read(64)
+
+    for i in range(marine_channels_count):
+        bs = f.read(1)
+        marine_channels.append(decoder.chan_flags.decode(bs))
+
+    # Unsure
+    bs = f.read(4)
+
+    bs = f.read(12)
+    limit_search_text_tag = decoder.text_tag.decode(bs)
+
+    for i in range(banks):
+        bs = f.read(12)
+        bank_text_tags.append(decoder.text_tag.decode(bs))
+
+    # Unsure
+    bs = f.read(12)
+
+    bs = f.read(38)
+
+    bs = f.read(4)
+    limit_search_low = decoder.channel.decode(bs)
+
+    bs = f.read(4)
+    limit_search_high = decoder.channel.decode(bs)
+
+    bs = f.read(4)
+    priority = decoder.channel.decode(bs)
 
 for i in range(channels):
     memory_slot = decoder.index_to_memory_slot(i, channels_per_bank, bank_radix)
@@ -80,5 +127,17 @@ for i in range(talkgroups):
     print(f"{tg_id} {tg_memory[i]} {tg_text_tags[i]}")
 
 for i in range(search_groups):
-    lockouts = ", ".join([f"{f}" for f in search_lockout_freq[i] if not f.unused])
+    lockouts = ", ".join([f"{f}" for f in search_lockout_freq[i] if not f.freq.unused])
     print(f"SR{i+2} {search_lockout_count[i]:02} {lockouts}")
+
+for i in range(cb_channels_count):
+    print(f"CB Chan#{i+1} {cb_channels[i]}")
+
+for i in range(marine_channels_count):
+    print(f"Marine Chan#{i+1} {marine_channels[i]}")
+
+for i in range(banks):
+    print(f"Bank {i}: {bank_text_tags[i]}")
+print(f"Limit Search Text: {limit_search_text_tag}")
+print(f"Limit Search Range: {limit_search_low} - {limit_search_high}")
+print(f"Priority Channel: {priority}")

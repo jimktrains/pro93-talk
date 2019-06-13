@@ -9,5 +9,9 @@ sys.argv.pop(0)
 
 for i in sys.argv:
     bs = bytes.fromhex(i)
-    mem=decoder.freq_memory.decode(bs)
+    mem = None
+    if len(bs) == 3:
+        mem=decoder.frequency.decode(bs)
+    elif len(bs) == 4:
+        mem=decoder.channel.decode(bs)
     print(bs.hex() + " => " + str(mem))

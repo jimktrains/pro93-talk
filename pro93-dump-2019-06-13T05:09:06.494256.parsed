@@ -1,0 +1,1417 @@
+memory[0] 000 470.66250 FM D PAAC LRT    
+memory[1] 001 480.68750 FM D PAAC LRT YAR
+memory[2] 002 470.73750 FM D PAAC LRT OPS
+memory[3] 003 123.95000 AM D KPIT AP 0918
+memory[4] 004 124.15000 AM D KPIT AP 0009
+memory[5] 005 133.70000 AM D KPIT AP 1827
+memory[6] 006 121.25000 AM D KPIT AP 2736
+memory[7] 007 124.75000 AM D KPIT DPRTR N
+memory[8] 008 119.35000 AM D KPIT DS/KAGC
+memory[9] 009 452.77500 FM D PAAC PD DISP
+memory[10] 010 453.75000 FM D PAAC ROAD OP
+memory[11] 011 30.82000 FM D PAAC MAINT  
+memory[12] 012 453.20000 FM D PAAC ROSS GR
+memory[13] 013 453.30000 FM D PAAC WMIF GR
+memory[14] 014 30.90000 FM D PAAC MAINT  
+memory[15] 015 453.50000 FM D PAAC COLLIER
+memory[16] 016 453.60000 FM D PAAC ELIB GR
+memory[17] 017 470.61250 FM D PAAC LRT    
+memory[18] 018 473.61250 FM D PAAC LRT    
+memory[19] 019 473.66250 FM D PAAC LRT    
+memory[20] 020 473.68750 FM D PAAC LRT YRD
+memory[21] 021 473.73750 FM D PAAC LRT OPS
+memory[22] 022 128.30000 AM D KPIT TOWER  
+memory[23] 023 122.95000 AM D KPIT/KAGC UC
+memory[24] 024 121.10000 AM D KAGC TOWER  
+memory[25] 025 27.18500 AM D CB 19       
+memory[26] 026 27.06500 AM D CB 9        
+memory[27] 027 471.77500 FM D PAAC LRT ROW
+memory[28] 028 - FM D ~no tag~
+memory[29] 029 - FM D ~no tag~
+memory[30] 100 160.80000 FM D NS ROAD 1   
+memory[31] 101 161.07000 FM D NS ROAD 2   
+memory[32] 102 160.86000 FM D NS ROAD 3   
+memory[33] 103 160.56000 FM D NS PD DISP  
+memory[34] 104 160.68000 FM D NS PD CAR2CA
+memory[35] 105 161.44500 FM D NS ENOLA YM 
+memory[36] 106 161.25000 FM D NS ROAD ERIE
+memory[37] 107 160.98000 FM D NS CONWAY YM
+memory[38] 108 161.43000 FM D NS MOW      
+memory[39] 109 161.13000 FM D NS/CSX MOW  
+memory[40] 110 160.71000 FM D NS MOW 4    
+memory[41] 111 160.23000 FM D CSX ROAD    
+memory[42] 112 160.66500 FM D CSX BA DISP 
+memory[43] 113 161.52000 FM D CSX BB DISP 
+memory[44] 114 160.32000 FM D CSX IO DISP 
+memory[45] 115 160.78500 FM D CSX MOW     
+memory[46] 116 160.89000 FM D CSX PBX     
+memory[47] 117 160.93500 FM D AV OPS      
+memory[48] 118 160.21500 FM D POHC OPS    
+memory[49] 119 160.59000 FM D POHC OPS    
+memory[50] 120 160.26000 FM D URR ROAD/DIS
+memory[51] 121 160.35000 FM D URR         
+memory[52] 122 161.02500 FM D W&LE        
+memory[53] 123 161.41500 FM D SWPARR      
+memory[54] 124 161.50500 FM D MCKEESCON RR
+memory[55] 125 161.20500 FM D AMTRK PD C2C
+memory[56] 126 160.81500 FM D AMTRK PD C2C
+memory[57] 127 173.37500 FM D AMTRK PD TRA
+memory[58] 128 - FM D ~no tag~
+memory[59] 129 - FM D ~no tag~
+memory[60] 200 - FM AD ~no tag~
+memory[61] 201 866.31250 ED ~no tag~
+memory[62] 202 866.81250 ED ~no tag~
+memory[63] 203 867.31250 ED ~no tag~
+memory[64] 204 867.81250 ED ~no tag~
+memory[65] 205 868.31250 ED ~no tag~
+memory[66] 206 - FM ~no tag~
+memory[67] 207 868.81250 ED ~no tag~
+memory[68] 208 - FM D ~no tag~
+memory[69] 209 - FM D ~no tag~
+memory[70] 210 - FM D ~no tag~
+memory[71] 211 - FM D ~no tag~
+memory[72] 212 - FM D ~no tag~
+memory[73] 213 - FM D ~no tag~
+memory[74] 214 - FM D ~no tag~
+memory[75] 215 - FM D ~no tag~
+memory[76] 216 - FM D ~no tag~
+memory[77] 217 - FM D ~no tag~
+memory[78] 218 - FM D ~no tag~
+memory[79] 219 - FM D ~no tag~
+memory[80] 220 - FM D ~no tag~
+memory[81] 221 - FM D ~no tag~
+memory[82] 222 - FM D ~no tag~
+memory[83] 223 - FM D ~no tag~
+memory[84] 224 - FM D ~no tag~
+memory[85] 225 - FM D ~no tag~
+memory[86] 226 - FM D ~no tag~
+memory[87] 227 - FM D ~no tag~
+memory[88] 228 - FM D ~no tag~
+memory[89] 229 - FM D ~no tag~
+memory[90] 300 - FM D ~no tag~
+memory[91] 301 867.26250 ED ~no tag~
+memory[92] 302 867.26250 FM ~no tag~
+memory[93] 303 - FM D ~no tag~
+memory[94] 304 - FM D ~no tag~
+memory[95] 305 - FM D ~no tag~
+memory[96] 306 - FM D ~no tag~
+memory[97] 307 - FM D ~no tag~
+memory[98] 308 - FM D ~no tag~
+memory[99] 309 - FM D ~no tag~
+memory[100] 310 - FM D ~no tag~
+memory[101] 311 - FM D ~no tag~
+memory[102] 312 - FM D ~no tag~
+memory[103] 313 - FM D ~no tag~
+memory[104] 314 - FM D ~no tag~
+memory[105] 315 - FM D ~no tag~
+memory[106] 316 - FM D ~no tag~
+memory[107] 317 - FM D ~no tag~
+memory[108] 318 - FM D ~no tag~
+memory[109] 319 - FM D ~no tag~
+memory[110] 320 - FM D ~no tag~
+memory[111] 321 - FM D ~no tag~
+memory[112] 322 - FM D ~no tag~
+memory[113] 323 - FM D ~no tag~
+memory[114] 324 - FM D ~no tag~
+memory[115] 325 - FM D ~no tag~
+memory[116] 326 - FM D ~no tag~
+memory[117] 327 - FM D ~no tag~
+memory[118] 328 - FM D ~no tag~
+memory[119] 329 - FM D ~no tag~
+memory[120] 400 472.17500 FM D MTLEBO PUBSA
+memory[121] 401 453.72500 FM D MTLEBO DPW  
+memory[122] 402 452.15000 FM D LEBO FIRE   
+memory[123] 403 460.60000 FM D AGC S FIRE  
+memory[124] 404 472.57500 FM D AGC S POLICE
+memory[125] 405 451.67500 FM D MLSD OPS/MAI
+memory[126] 406 456.22500 FM D MTSD HW HV L
+memory[127] 407 457.67500 FM D MLSD J W F  
+memory[128] 408 462.05000 FM D MLSD HS     
+memory[129] 409 453.62500 FM D AGC S EMS 2 
+memory[130] 410 458.33750 FM D AGC S5 FIRE 
+memory[131] 411 458.66250 FM D AGC S6 FIRE 
+memory[132] 412 460.20000 FM D AGC S PUBSAF
+memory[133] 413 460.62500 FM D AGC S FIRE 2
+memory[134] 414 471.10000 FM D AGC S FIRE 3
+memory[135] 415 471.33750 FM D AGC S EMS 1 
+memory[136] 416 458.33750 FM D AGC FIRE 5  
+memory[137] 417 472.57500 FM D ~no tag~
+memory[138] 418 453.41250 FM D PGH INC CMD 
+memory[139] 419 453.52500 FM D PA EMER MGT6
+memory[140] 420 471.13750 FM D AGC EMER SRV
+memory[141] 421 453.71250 FM D AGC PBSA TAC
+memory[142] 422 458.36250 FM D PGH 6 TA C12
+memory[143] 423 453.25000 FM D ~no tag~
+memory[144] 424 154.34000 FM D ~no tag~
+memory[145] 425 460.05000 FM D ~no tag~
+memory[146] 426 - FM D ~no tag~
+memory[147] 427 - FM D ~no tag~
+memory[148] 428 - FM D ~no tag~
+memory[149] 429 37.18000 FM D AGC PUBWORKS
+memory[150] 500 - FM D ~no tag~
+memory[151] 501 - FM D ~no tag~
+memory[152] 502 - FM D ~no tag~
+memory[153] 503 - FM D ~no tag~
+memory[154] 504 - FM D ~no tag~
+memory[155] 505 - FM D ~no tag~
+memory[156] 506 - FM D ~no tag~
+memory[157] 507 - FM D ~no tag~
+memory[158] 508 - FM D ~no tag~
+memory[159] 509 - FM D ~no tag~
+memory[160] 510 - FM D ~no tag~
+memory[161] 511 - FM D ~no tag~
+memory[162] 512 - FM D ~no tag~
+memory[163] 513 - FM D ~no tag~
+memory[164] 514 - FM D ~no tag~
+memory[165] 515 - FM D ~no tag~
+memory[166] 516 - FM D ~no tag~
+memory[167] 517 - FM D ~no tag~
+memory[168] 518 - FM D ~no tag~
+memory[169] 519 - FM D ~no tag~
+memory[170] 520 - FM D ~no tag~
+memory[171] 521 - FM D ~no tag~
+memory[172] 522 - FM D ~no tag~
+memory[173] 523 - FM D ~no tag~
+memory[174] 524 - FM D ~no tag~
+memory[175] 525 - FM D ~no tag~
+memory[176] 526 - FM D ~no tag~
+memory[177] 527 - FM D ~no tag~
+memory[178] 528 - FM D ~no tag~
+memory[179] 529 - FM D ~no tag~
+memory[180] 600 - FM D ~no tag~
+memory[181] 601 - FM D ~no tag~
+memory[182] 602 - FM D ~no tag~
+memory[183] 603 - FM D ~no tag~
+memory[184] 604 - FM D ~no tag~
+memory[185] 605 - FM D ~no tag~
+memory[186] 606 - FM D ~no tag~
+memory[187] 607 - FM D ~no tag~
+memory[188] 608 - FM D ~no tag~
+memory[189] 609 - FM D ~no tag~
+memory[190] 610 - FM D ~no tag~
+memory[191] 611 - FM D ~no tag~
+memory[192] 612 - FM D ~no tag~
+memory[193] 613 - FM D ~no tag~
+memory[194] 614 - FM D ~no tag~
+memory[195] 615 - FM D ~no tag~
+memory[196] 616 - FM D ~no tag~
+memory[197] 617 - FM D ~no tag~
+memory[198] 618 - FM D ~no tag~
+memory[199] 619 - FM D ~no tag~
+memory[200] 620 - FM D ~no tag~
+memory[201] 621 - FM D ~no tag~
+memory[202] 622 - FM D ~no tag~
+memory[203] 623 - FM D ~no tag~
+memory[204] 624 - FM D ~no tag~
+memory[205] 625 - FM D ~no tag~
+memory[206] 626 - FM D ~no tag~
+memory[207] 627 - FM D ~no tag~
+memory[208] 628 - FM D ~no tag~
+memory[209] 629 - FM D ~no tag~
+memory[210] 700 - FM D ~no tag~
+memory[211] 701 - FM D ~no tag~
+memory[212] 702 - FM D ~no tag~
+memory[213] 703 - FM D ~no tag~
+memory[214] 704 - FM D ~no tag~
+memory[215] 705 - FM D ~no tag~
+memory[216] 706 - FM D ~no tag~
+memory[217] 707 - FM D ~no tag~
+memory[218] 708 - FM D ~no tag~
+memory[219] 709 - FM D ~no tag~
+memory[220] 710 - FM D ~no tag~
+memory[221] 711 - FM D ~no tag~
+memory[222] 712 - FM D ~no tag~
+memory[223] 713 - FM D ~no tag~
+memory[224] 714 - FM D ~no tag~
+memory[225] 715 - FM D ~no tag~
+memory[226] 716 - FM D ~no tag~
+memory[227] 717 - FM D ~no tag~
+memory[228] 718 - FM D ~no tag~
+memory[229] 719 - FM D ~no tag~
+memory[230] 720 - FM D ~no tag~
+memory[231] 721 - FM D ~no tag~
+memory[232] 722 - FM D ~no tag~
+memory[233] 723 - FM D ~no tag~
+memory[234] 724 - FM D ~no tag~
+memory[235] 725 - FM D ~no tag~
+memory[236] 726 - FM D ~no tag~
+memory[237] 727 - FM D ~no tag~
+memory[238] 728 - FM D ~no tag~
+memory[239] 729 - FM D ~no tag~
+memory[240] 800 - FM D ~no tag~
+memory[241] 801 - FM D ~no tag~
+memory[242] 802 855.38750 MO D ~no tag~
+memory[243] 803 - FM D ~no tag~
+memory[244] 804 - FM D ~no tag~
+memory[245] 805 856.33750 ED D ~no tag~
+memory[246] 806 857.36250 ED D ~no tag~
+memory[247] 807 858.36250 ED D ~no tag~
+memory[248] 808 859.33750 ED D ~no tag~
+memory[249] 809 860.33750 ED D ~no tag~
+memory[250] 810 - FM D ~no tag~
+memory[251] 811 - FM D ~no tag~
+memory[252] 812 - FM D ~no tag~
+memory[253] 813 - FM D ~no tag~
+memory[254] 814 - FM D ~no tag~
+memory[255] 815 - FM D ~no tag~
+memory[256] 816 - FM D ~no tag~
+memory[257] 817 - FM D ~no tag~
+memory[258] 818 - FM D ~no tag~
+memory[259] 819 - FM D ~no tag~
+memory[260] 820 - FM D ~no tag~
+memory[261] 821 - FM D ~no tag~
+memory[262] 822 - FM D ~no tag~
+memory[263] 823 - FM D ~no tag~
+memory[264] 824 - FM D ~no tag~
+memory[265] 825 - FM D ~no tag~
+memory[266] 826 - FM D ~no tag~
+memory[267] 827 - FM D ~no tag~
+memory[268] 828 - FM D ~no tag~
+memory[269] 829 - FM D ~no tag~
+memory[270] 900 146.73000 FM D WA3PBD      
+memory[271] 901 51.74000 FM D WA3PBD      
+memory[272] 902 146.52000 FM D ~no tag~
+memory[273] 903 146.95500 FM D N3SH        
+memory[274] 904 147.03000 FM D W3KWH       
+memory[275] 905 29.62000 FM D WA3PBD      
+memory[276] 906 29.64000 FM D W3PGH       
+memory[277] 907 51.94000 FM D N3WX        
+memory[278] 908 52.64000 FM D W3PGH       
+memory[279] 909 146.61000 FM D W3PGH       
+memory[280] 910 426.25000 FM D W3KWH       
+memory[281] 911 421.25000 FM D WA3PBD      
+memory[282] 912 440.60000 FM D N3SH        
+memory[283] 913 147.09000 FM D ~no tag~
+memory[284] 914 145.61000 FM D ~no tag~
+memory[285] 915 146.88000 FM D W3EXW       
+memory[286] 916 145.47000 FM D ~no tag~
+memory[287] 917 147.12000 FM D ~no tag~
+memory[288] 918 146.53000 FM D ~no tag~
+memory[289] 919 146.09000 FM D ~no tag~
+memory[290] 920 - FM D ~no tag~
+memory[291] 921 - FM D ~no tag~
+memory[292] 922 - FM D ~no tag~
+memory[293] 923 - FM D ~no tag~
+memory[294] 924 - FM D ~no tag~
+memory[295] 925 - FM D ~no tag~
+memory[296] 926 - FM D ~no tag~
+memory[297] 927 - FM D ~no tag~
+memory[298] 928 - FM D ~no tag~
+memory[299] 929 - FM D ~no tag~
+0-0-00 00289 ID#  0289   
+0-0-01 00561 ID#  0561   
+0-0-02 00307 ID#  0307   
+0-0-03 00529 ID#  0529   
+0-0-04 00273 ID#  0273   
+0-0-05 00563 ID#  0563   
+0-0-06 02047 ID#  2047   
+0-0-07 00530 ID#  0530   
+0-0-08 00291 ID#  0291   
+0-0-09 00578 ID#  0578   
+0-0-10 00306 ID#  0306   
+0-0-11 00562 ID#  0562   
+0-0-12 02045 ID#  2045   
+0-0-13 00549 ID#  0549   
+0-0-14 00000 ~no tag~
+0-0-15 00000 ~no tag~
+0-0-16 00000 ~no tag~
+0-0-17 00000 ~no tag~
+0-0-18 00000 ~no tag~
+0-0-19 00000 ~no tag~
+0-1-00 00000 ~no tag~
+0-1-01 00000 ~no tag~
+0-1-02 00000 ~no tag~
+0-1-03 00000 ~no tag~
+0-1-04 00000 ~no tag~
+0-1-05 00000 ~no tag~
+0-1-06 00000 ~no tag~
+0-1-07 00000 ~no tag~
+0-1-08 00000 ~no tag~
+0-1-09 00000 ~no tag~
+0-1-10 00000 ~no tag~
+0-1-11 00000 ~no tag~
+0-1-12 00000 ~no tag~
+0-1-13 00000 ~no tag~
+0-1-14 00000 ~no tag~
+0-1-15 00000 ~no tag~
+0-1-16 00000 ~no tag~
+0-1-17 00000 ~no tag~
+0-1-18 00000 ~no tag~
+0-1-19 00000 ~no tag~
+0-2-00 00000 ~no tag~
+0-2-01 00000 ~no tag~
+0-2-02 00000 ~no tag~
+0-2-03 00000 ~no tag~
+0-2-04 00000 ~no tag~
+0-2-05 00000 ~no tag~
+0-2-06 00000 ~no tag~
+0-2-07 00000 ~no tag~
+0-2-08 00000 ~no tag~
+0-2-09 00000 ~no tag~
+0-2-10 00000 ~no tag~
+0-2-11 00000 ~no tag~
+0-2-12 00000 ~no tag~
+0-2-13 00000 ~no tag~
+0-2-14 00000 ~no tag~
+0-2-15 00000 ~no tag~
+0-2-16 00000 ~no tag~
+0-2-17 00000 ~no tag~
+0-2-18 00000 ~no tag~
+0-2-19 00000 ~no tag~
+0-3-00 00000 ~no tag~
+0-3-01 00000 ~no tag~
+0-3-02 00000 ~no tag~
+0-3-03 00000 ~no tag~
+0-3-04 00000 ~no tag~
+0-3-05 00000 ~no tag~
+0-3-06 00000 ~no tag~
+0-3-07 00000 ~no tag~
+0-3-08 00000 ~no tag~
+0-3-09 00000 ~no tag~
+0-3-10 00000 ~no tag~
+0-3-11 00000 ~no tag~
+0-3-12 00000 ~no tag~
+0-3-13 00000 ~no tag~
+0-3-14 00000 ~no tag~
+0-3-15 00000 ~no tag~
+0-3-16 00000 ~no tag~
+0-3-17 00000 ~no tag~
+0-3-18 00000 ~no tag~
+0-3-19 00000 ~no tag~
+0-4-00 00000 ~no tag~
+0-4-01 00000 ~no tag~
+0-4-02 00000 ~no tag~
+0-4-03 00000 ~no tag~
+0-4-04 00000 ~no tag~
+0-4-05 00000 ~no tag~
+0-4-06 00000 ~no tag~
+0-4-07 00000 ~no tag~
+0-4-08 00000 ~no tag~
+0-4-09 00000 ~no tag~
+0-4-10 00000 ~no tag~
+0-4-11 00000 ~no tag~
+0-4-12 00000 ~no tag~
+0-4-13 00000 ~no tag~
+0-4-14 00000 ~no tag~
+0-4-15 00000 ~no tag~
+0-4-16 00000 ~no tag~
+0-4-17 00000 ~no tag~
+0-4-18 00000 ~no tag~
+0-4-19 00000 ~no tag~
+1-0-00 00000 ~no tag~
+1-0-01 00000 ~no tag~
+1-0-02 00000 ~no tag~
+1-0-03 00000 ~no tag~
+1-0-04 00000 ~no tag~
+1-0-05 00000 ~no tag~
+1-0-06 00000 ~no tag~
+1-0-07 00000 ~no tag~
+1-0-08 00000 ~no tag~
+1-0-09 00000 ~no tag~
+1-0-10 00000 ~no tag~
+1-0-11 00000 ~no tag~
+1-0-12 00000 ~no tag~
+1-0-13 00000 ~no tag~
+1-0-14 00000 ~no tag~
+1-0-15 00000 ~no tag~
+1-0-16 00000 ~no tag~
+1-0-17 00000 ~no tag~
+1-0-18 00000 ~no tag~
+1-0-19 00000 ~no tag~
+1-1-00 00000 ~no tag~
+1-1-01 00000 ~no tag~
+1-1-02 00000 ~no tag~
+1-1-03 00000 ~no tag~
+1-1-04 00000 ~no tag~
+1-1-05 00000 ~no tag~
+1-1-06 00000 ~no tag~
+1-1-07 00000 ~no tag~
+1-1-08 00000 ~no tag~
+1-1-09 00000 ~no tag~
+1-1-10 00000 ~no tag~
+1-1-11 00000 ~no tag~
+1-1-12 00000 ~no tag~
+1-1-13 00000 ~no tag~
+1-1-14 00000 ~no tag~
+1-1-15 00000 ~no tag~
+1-1-16 00000 ~no tag~
+1-1-17 00000 ~no tag~
+1-1-18 00000 ~no tag~
+1-1-19 00000 ~no tag~
+1-2-00 00000 ~no tag~
+1-2-01 00000 ~no tag~
+1-2-02 00000 ~no tag~
+1-2-03 00000 ~no tag~
+1-2-04 00000 ~no tag~
+1-2-05 00000 ~no tag~
+1-2-06 00000 ~no tag~
+1-2-07 00000 ~no tag~
+1-2-08 00000 ~no tag~
+1-2-09 00000 ~no tag~
+1-2-10 00000 ~no tag~
+1-2-11 00000 ~no tag~
+1-2-12 00000 ~no tag~
+1-2-13 00000 ~no tag~
+1-2-14 00000 ~no tag~
+1-2-15 00000 ~no tag~
+1-2-16 00000 ~no tag~
+1-2-17 00000 ~no tag~
+1-2-18 00000 ~no tag~
+1-2-19 00000 ~no tag~
+1-3-00 00000 ~no tag~
+1-3-01 00000 ~no tag~
+1-3-02 00000 ~no tag~
+1-3-03 00000 ~no tag~
+1-3-04 00000 ~no tag~
+1-3-05 00000 ~no tag~
+1-3-06 00000 ~no tag~
+1-3-07 00000 ~no tag~
+1-3-08 00000 ~no tag~
+1-3-09 00000 ~no tag~
+1-3-10 00000 ~no tag~
+1-3-11 00000 ~no tag~
+1-3-12 00000 ~no tag~
+1-3-13 00000 ~no tag~
+1-3-14 00000 ~no tag~
+1-3-15 00000 ~no tag~
+1-3-16 00000 ~no tag~
+1-3-17 00000 ~no tag~
+1-3-18 00000 ~no tag~
+1-3-19 00000 ~no tag~
+1-4-00 00000 ~no tag~
+1-4-01 00000 ~no tag~
+1-4-02 00000 ~no tag~
+1-4-03 00000 ~no tag~
+1-4-04 00000 ~no tag~
+1-4-05 00000 ~no tag~
+1-4-06 00000 ~no tag~
+1-4-07 00000 ~no tag~
+1-4-08 00000 ~no tag~
+1-4-09 00000 ~no tag~
+1-4-10 00000 ~no tag~
+1-4-11 00000 ~no tag~
+1-4-12 00000 ~no tag~
+1-4-13 00000 ~no tag~
+1-4-14 00000 ~no tag~
+1-4-15 00000 ~no tag~
+1-4-16 00000 ~no tag~
+1-4-17 00000 ~no tag~
+1-4-18 00000 ~no tag~
+1-4-19 00000 ~no tag~
+2-0-00 00289 ID#  0289   
+2-0-01 00337 ID#  0337   
+2-0-02 00529 ID#  0529   
+2-0-03 00306 ID#  0306   
+2-0-04 00273 ID#  0273   
+2-0-05 00561 ID#  0561   
+2-0-06 00307 ID#  0307   
+2-0-07 02047 ID#  2047   
+2-0-08 00548 ID#  0548   
+2-0-09 00323 ID#  0323   
+2-0-10 00549 ID#  0549   
+2-0-11 00000 ~no tag~
+2-0-12 00000 ~no tag~
+2-0-13 00000 ~no tag~
+2-0-14 00000 ~no tag~
+2-0-15 00000 ~no tag~
+2-0-16 00000 ~no tag~
+2-0-17 00000 ~no tag~
+2-0-18 00000 ~no tag~
+2-0-19 00000 ~no tag~
+2-1-00 00000 ~no tag~
+2-1-01 00000 ~no tag~
+2-1-02 00000 ~no tag~
+2-1-03 00000 ~no tag~
+2-1-04 00000 ~no tag~
+2-1-05 00000 ~no tag~
+2-1-06 00000 ~no tag~
+2-1-07 00000 ~no tag~
+2-1-08 00000 ~no tag~
+2-1-09 00000 ~no tag~
+2-1-10 00000 ~no tag~
+2-1-11 00000 ~no tag~
+2-1-12 00000 ~no tag~
+2-1-13 00000 ~no tag~
+2-1-14 00000 ~no tag~
+2-1-15 00000 ~no tag~
+2-1-16 00000 ~no tag~
+2-1-17 00000 ~no tag~
+2-1-18 00000 ~no tag~
+2-1-19 00000 ~no tag~
+2-2-00 00000 ~no tag~
+2-2-01 00000 ~no tag~
+2-2-02 00000 ~no tag~
+2-2-03 00000 ~no tag~
+2-2-04 00000 ~no tag~
+2-2-05 00000 ~no tag~
+2-2-06 00000 ~no tag~
+2-2-07 00000 ~no tag~
+2-2-08 00000 ~no tag~
+2-2-09 00000 ~no tag~
+2-2-10 00000 ~no tag~
+2-2-11 00000 ~no tag~
+2-2-12 00000 ~no tag~
+2-2-13 00000 ~no tag~
+2-2-14 00000 ~no tag~
+2-2-15 00000 ~no tag~
+2-2-16 00000 ~no tag~
+2-2-17 00000 ~no tag~
+2-2-18 00000 ~no tag~
+2-2-19 00000 ~no tag~
+2-3-00 00000 ~no tag~
+2-3-01 00000 ~no tag~
+2-3-02 00000 ~no tag~
+2-3-03 00000 ~no tag~
+2-3-04 00000 ~no tag~
+2-3-05 00000 ~no tag~
+2-3-06 00000 ~no tag~
+2-3-07 00000 ~no tag~
+2-3-08 00000 ~no tag~
+2-3-09 00000 ~no tag~
+2-3-10 00000 ~no tag~
+2-3-11 00000 ~no tag~
+2-3-12 00000 ~no tag~
+2-3-13 00000 ~no tag~
+2-3-14 00000 ~no tag~
+2-3-15 00000 ~no tag~
+2-3-16 00000 ~no tag~
+2-3-17 00000 ~no tag~
+2-3-18 00000 ~no tag~
+2-3-19 00000 ~no tag~
+2-4-00 00000 ~no tag~
+2-4-01 00000 ~no tag~
+2-4-02 00000 ~no tag~
+2-4-03 00000 ~no tag~
+2-4-04 00000 ~no tag~
+2-4-05 00000 ~no tag~
+2-4-06 00000 ~no tag~
+2-4-07 00000 ~no tag~
+2-4-08 00000 ~no tag~
+2-4-09 00000 ~no tag~
+2-4-10 00000 ~no tag~
+2-4-11 00000 ~no tag~
+2-4-12 00000 ~no tag~
+2-4-13 00000 ~no tag~
+2-4-14 00000 ~no tag~
+2-4-15 00000 ~no tag~
+2-4-16 00000 ~no tag~
+2-4-17 00000 ~no tag~
+2-4-18 00000 ~no tag~
+2-4-19 00000 ~no tag~
+3-0-00 00000 ~no tag~
+3-0-01 00000 ~no tag~
+3-0-02 00000 ~no tag~
+3-0-03 00000 ~no tag~
+3-0-04 00000 ~no tag~
+3-0-05 00000 ~no tag~
+3-0-06 00000 ~no tag~
+3-0-07 00000 ~no tag~
+3-0-08 00000 ~no tag~
+3-0-09 00000 ~no tag~
+3-0-10 00000 ~no tag~
+3-0-11 00000 ~no tag~
+3-0-12 00000 ~no tag~
+3-0-13 00000 ~no tag~
+3-0-14 00000 ~no tag~
+3-0-15 00000 ~no tag~
+3-0-16 00000 ~no tag~
+3-0-17 00000 ~no tag~
+3-0-18 00000 ~no tag~
+3-0-19 00000 ~no tag~
+3-1-00 00000 ~no tag~
+3-1-01 00000 ~no tag~
+3-1-02 00000 ~no tag~
+3-1-03 00000 ~no tag~
+3-1-04 00000 ~no tag~
+3-1-05 00000 ~no tag~
+3-1-06 00000 ~no tag~
+3-1-07 00000 ~no tag~
+3-1-08 00000 ~no tag~
+3-1-09 00000 ~no tag~
+3-1-10 00000 ~no tag~
+3-1-11 00000 ~no tag~
+3-1-12 00000 ~no tag~
+3-1-13 00000 ~no tag~
+3-1-14 00000 ~no tag~
+3-1-15 00000 ~no tag~
+3-1-16 00000 ~no tag~
+3-1-17 00000 ~no tag~
+3-1-18 00000 ~no tag~
+3-1-19 00000 ~no tag~
+3-2-00 00000 ~no tag~
+3-2-01 00000 ~no tag~
+3-2-02 00000 ~no tag~
+3-2-03 00000 ~no tag~
+3-2-04 00000 ~no tag~
+3-2-05 00000 ~no tag~
+3-2-06 00000 ~no tag~
+3-2-07 00000 ~no tag~
+3-2-08 00000 ~no tag~
+3-2-09 00000 ~no tag~
+3-2-10 00000 ~no tag~
+3-2-11 00000 ~no tag~
+3-2-12 00000 ~no tag~
+3-2-13 00000 ~no tag~
+3-2-14 00000 ~no tag~
+3-2-15 00000 ~no tag~
+3-2-16 00000 ~no tag~
+3-2-17 00000 ~no tag~
+3-2-18 00000 ~no tag~
+3-2-19 00000 ~no tag~
+3-3-00 00000 ~no tag~
+3-3-01 00000 ~no tag~
+3-3-02 00000 ~no tag~
+3-3-03 00000 ~no tag~
+3-3-04 00000 ~no tag~
+3-3-05 00000 ~no tag~
+3-3-06 00000 ~no tag~
+3-3-07 00000 ~no tag~
+3-3-08 00000 ~no tag~
+3-3-09 00000 ~no tag~
+3-3-10 00000 ~no tag~
+3-3-11 00000 ~no tag~
+3-3-12 00000 ~no tag~
+3-3-13 00000 ~no tag~
+3-3-14 00000 ~no tag~
+3-3-15 00000 ~no tag~
+3-3-16 00000 ~no tag~
+3-3-17 00000 ~no tag~
+3-3-18 00000 ~no tag~
+3-3-19 00000 ~no tag~
+3-4-00 00000 ~no tag~
+3-4-01 00000 ~no tag~
+3-4-02 00000 ~no tag~
+3-4-03 00000 ~no tag~
+3-4-04 00000 ~no tag~
+3-4-05 00000 ~no tag~
+3-4-06 00000 ~no tag~
+3-4-07 00000 ~no tag~
+3-4-08 00000 ~no tag~
+3-4-09 00000 ~no tag~
+3-4-10 00000 ~no tag~
+3-4-11 00000 ~no tag~
+3-4-12 00000 ~no tag~
+3-4-13 00000 ~no tag~
+3-4-14 00000 ~no tag~
+3-4-15 00000 ~no tag~
+3-4-16 00000 ~no tag~
+3-4-17 00000 ~no tag~
+3-4-18 00000 ~no tag~
+3-4-19 00000 ~no tag~
+4-0-00 00000 ~no tag~
+4-0-01 00000 ~no tag~
+4-0-02 00000 ~no tag~
+4-0-03 00000 ~no tag~
+4-0-04 00000 ~no tag~
+4-0-05 00000 ~no tag~
+4-0-06 00000 ~no tag~
+4-0-07 00000 ~no tag~
+4-0-08 00000 ~no tag~
+4-0-09 00000 ~no tag~
+4-0-10 00000 ~no tag~
+4-0-11 00000 ~no tag~
+4-0-12 00000 ~no tag~
+4-0-13 00000 ~no tag~
+4-0-14 00000 ~no tag~
+4-0-15 00000 ~no tag~
+4-0-16 00000 ~no tag~
+4-0-17 00000 ~no tag~
+4-0-18 00000 ~no tag~
+4-0-19 00000 ~no tag~
+4-1-00 00000 ~no tag~
+4-1-01 00000 ~no tag~
+4-1-02 00000 ~no tag~
+4-1-03 00000 ~no tag~
+4-1-04 00000 ~no tag~
+4-1-05 00000 ~no tag~
+4-1-06 00000 ~no tag~
+4-1-07 00000 ~no tag~
+4-1-08 00000 ~no tag~
+4-1-09 00000 ~no tag~
+4-1-10 00000 ~no tag~
+4-1-11 00000 ~no tag~
+4-1-12 00000 ~no tag~
+4-1-13 00000 ~no tag~
+4-1-14 00000 ~no tag~
+4-1-15 00000 ~no tag~
+4-1-16 00000 ~no tag~
+4-1-17 00000 ~no tag~
+4-1-18 00000 ~no tag~
+4-1-19 00000 ~no tag~
+4-2-00 00000 ~no tag~
+4-2-01 00000 ~no tag~
+4-2-02 00000 ~no tag~
+4-2-03 00000 ~no tag~
+4-2-04 00000 ~no tag~
+4-2-05 00000 ~no tag~
+4-2-06 00000 ~no tag~
+4-2-07 00000 ~no tag~
+4-2-08 00000 ~no tag~
+4-2-09 00000 ~no tag~
+4-2-10 00000 ~no tag~
+4-2-11 00000 ~no tag~
+4-2-12 00000 ~no tag~
+4-2-13 00000 ~no tag~
+4-2-14 00000 ~no tag~
+4-2-15 00000 ~no tag~
+4-2-16 00000 ~no tag~
+4-2-17 00000 ~no tag~
+4-2-18 00000 ~no tag~
+4-2-19 00000 ~no tag~
+4-3-00 00000 ~no tag~
+4-3-01 00000 ~no tag~
+4-3-02 00000 ~no tag~
+4-3-03 00000 ~no tag~
+4-3-04 00000 ~no tag~
+4-3-05 00000 ~no tag~
+4-3-06 00000 ~no tag~
+4-3-07 00000 ~no tag~
+4-3-08 00000 ~no tag~
+4-3-09 00000 ~no tag~
+4-3-10 00000 ~no tag~
+4-3-11 00000 ~no tag~
+4-3-12 00000 ~no tag~
+4-3-13 00000 ~no tag~
+4-3-14 00000 ~no tag~
+4-3-15 00000 ~no tag~
+4-3-16 00000 ~no tag~
+4-3-17 00000 ~no tag~
+4-3-18 00000 ~no tag~
+4-3-19 00000 ~no tag~
+4-4-00 00000 ~no tag~
+4-4-01 00000 ~no tag~
+4-4-02 00000 ~no tag~
+4-4-03 00000 ~no tag~
+4-4-04 00000 ~no tag~
+4-4-05 00000 ~no tag~
+4-4-06 00000 ~no tag~
+4-4-07 00000 ~no tag~
+4-4-08 00000 ~no tag~
+4-4-09 00000 ~no tag~
+4-4-10 00000 ~no tag~
+4-4-11 00000 ~no tag~
+4-4-12 00000 ~no tag~
+4-4-13 00000 ~no tag~
+4-4-14 00000 ~no tag~
+4-4-15 00000 ~no tag~
+4-4-16 00000 ~no tag~
+4-4-17 00000 ~no tag~
+4-4-18 00000 ~no tag~
+4-4-19 00000 ~no tag~
+5-0-00 00000 ~no tag~
+5-0-01 00000 ~no tag~
+5-0-02 00000 ~no tag~
+5-0-03 00000 ~no tag~
+5-0-04 00000 ~no tag~
+5-0-05 00000 ~no tag~
+5-0-06 00000 ~no tag~
+5-0-07 00000 ~no tag~
+5-0-08 00000 ~no tag~
+5-0-09 00000 ~no tag~
+5-0-10 00000 ~no tag~
+5-0-11 00000 ~no tag~
+5-0-12 00000 ~no tag~
+5-0-13 00000 ~no tag~
+5-0-14 00000 ~no tag~
+5-0-15 00000 ~no tag~
+5-0-16 00000 ~no tag~
+5-0-17 00000 ~no tag~
+5-0-18 00000 ~no tag~
+5-0-19 00000 ~no tag~
+5-1-00 00000 ~no tag~
+5-1-01 00000 ~no tag~
+5-1-02 00000 ~no tag~
+5-1-03 00000 ~no tag~
+5-1-04 00000 ~no tag~
+5-1-05 00000 ~no tag~
+5-1-06 00000 ~no tag~
+5-1-07 00000 ~no tag~
+5-1-08 00000 ~no tag~
+5-1-09 00000 ~no tag~
+5-1-10 00000 ~no tag~
+5-1-11 00000 ~no tag~
+5-1-12 00000 ~no tag~
+5-1-13 00000 ~no tag~
+5-1-14 00000 ~no tag~
+5-1-15 00000 ~no tag~
+5-1-16 00000 ~no tag~
+5-1-17 00000 ~no tag~
+5-1-18 00000 ~no tag~
+5-1-19 00000 ~no tag~
+5-2-00 00000 ~no tag~
+5-2-01 00000 ~no tag~
+5-2-02 00000 ~no tag~
+5-2-03 00000 ~no tag~
+5-2-04 00000 ~no tag~
+5-2-05 00000 ~no tag~
+5-2-06 00000 ~no tag~
+5-2-07 00000 ~no tag~
+5-2-08 00000 ~no tag~
+5-2-09 00000 ~no tag~
+5-2-10 00000 ~no tag~
+5-2-11 00000 ~no tag~
+5-2-12 00000 ~no tag~
+5-2-13 00000 ~no tag~
+5-2-14 00000 ~no tag~
+5-2-15 00000 ~no tag~
+5-2-16 00000 ~no tag~
+5-2-17 00000 ~no tag~
+5-2-18 00000 ~no tag~
+5-2-19 00000 ~no tag~
+5-3-00 00000 ~no tag~
+5-3-01 00000 ~no tag~
+5-3-02 00000 ~no tag~
+5-3-03 00000 ~no tag~
+5-3-04 00000 ~no tag~
+5-3-05 00000 ~no tag~
+5-3-06 00000 ~no tag~
+5-3-07 00000 ~no tag~
+5-3-08 00000 ~no tag~
+5-3-09 00000 ~no tag~
+5-3-10 00000 ~no tag~
+5-3-11 00000 ~no tag~
+5-3-12 00000 ~no tag~
+5-3-13 00000 ~no tag~
+5-3-14 00000 ~no tag~
+5-3-15 00000 ~no tag~
+5-3-16 00000 ~no tag~
+5-3-17 00000 ~no tag~
+5-3-18 00000 ~no tag~
+5-3-19 00000 ~no tag~
+5-4-00 00000 ~no tag~
+5-4-01 00000 ~no tag~
+5-4-02 00000 ~no tag~
+5-4-03 00000 ~no tag~
+5-4-04 00000 ~no tag~
+5-4-05 00000 ~no tag~
+5-4-06 00000 ~no tag~
+5-4-07 00000 ~no tag~
+5-4-08 00000 ~no tag~
+5-4-09 00000 ~no tag~
+5-4-10 00000 ~no tag~
+5-4-11 00000 ~no tag~
+5-4-12 00000 ~no tag~
+5-4-13 00000 ~no tag~
+5-4-14 00000 ~no tag~
+5-4-15 00000 ~no tag~
+5-4-16 00000 ~no tag~
+5-4-17 00000 ~no tag~
+5-4-18 00000 ~no tag~
+5-4-19 00000 ~no tag~
+6-0-00 00000 ~no tag~
+6-0-01 00000 ~no tag~
+6-0-02 00000 ~no tag~
+6-0-03 00000 ~no tag~
+6-0-04 00000 ~no tag~
+6-0-05 00000 ~no tag~
+6-0-06 00000 ~no tag~
+6-0-07 00000 ~no tag~
+6-0-08 00000 ~no tag~
+6-0-09 00000 ~no tag~
+6-0-10 00000 ~no tag~
+6-0-11 00000 ~no tag~
+6-0-12 00000 ~no tag~
+6-0-13 00000 ~no tag~
+6-0-14 00000 ~no tag~
+6-0-15 00000 ~no tag~
+6-0-16 00000 ~no tag~
+6-0-17 00000 ~no tag~
+6-0-18 00000 ~no tag~
+6-0-19 00000 ~no tag~
+6-1-00 00000 ~no tag~
+6-1-01 00000 ~no tag~
+6-1-02 00000 ~no tag~
+6-1-03 00000 ~no tag~
+6-1-04 00000 ~no tag~
+6-1-05 00000 ~no tag~
+6-1-06 00000 ~no tag~
+6-1-07 00000 ~no tag~
+6-1-08 00000 ~no tag~
+6-1-09 00000 ~no tag~
+6-1-10 00000 ~no tag~
+6-1-11 00000 ~no tag~
+6-1-12 00000 ~no tag~
+6-1-13 00000 ~no tag~
+6-1-14 00000 ~no tag~
+6-1-15 00000 ~no tag~
+6-1-16 00000 ~no tag~
+6-1-17 00000 ~no tag~
+6-1-18 00000 ~no tag~
+6-1-19 00000 ~no tag~
+6-2-00 00000 ~no tag~
+6-2-01 00000 ~no tag~
+6-2-02 00000 ~no tag~
+6-2-03 00000 ~no tag~
+6-2-04 00000 ~no tag~
+6-2-05 00000 ~no tag~
+6-2-06 00000 ~no tag~
+6-2-07 00000 ~no tag~
+6-2-08 00000 ~no tag~
+6-2-09 00000 ~no tag~
+6-2-10 00000 ~no tag~
+6-2-11 00000 ~no tag~
+6-2-12 00000 ~no tag~
+6-2-13 00000 ~no tag~
+6-2-14 00000 ~no tag~
+6-2-15 00000 ~no tag~
+6-2-16 00000 ~no tag~
+6-2-17 00000 ~no tag~
+6-2-18 00000 ~no tag~
+6-2-19 00000 ~no tag~
+6-3-00 00000 ~no tag~
+6-3-01 00000 ~no tag~
+6-3-02 00000 ~no tag~
+6-3-03 00000 ~no tag~
+6-3-04 00000 ~no tag~
+6-3-05 00000 ~no tag~
+6-3-06 00000 ~no tag~
+6-3-07 00000 ~no tag~
+6-3-08 00000 ~no tag~
+6-3-09 00000 ~no tag~
+6-3-10 00000 ~no tag~
+6-3-11 00000 ~no tag~
+6-3-12 00000 ~no tag~
+6-3-13 00000 ~no tag~
+6-3-14 00000 ~no tag~
+6-3-15 00000 ~no tag~
+6-3-16 00000 ~no tag~
+6-3-17 00000 ~no tag~
+6-3-18 00000 ~no tag~
+6-3-19 00000 ~no tag~
+6-4-00 00000 ~no tag~
+6-4-01 00000 ~no tag~
+6-4-02 00000 ~no tag~
+6-4-03 00000 ~no tag~
+6-4-04 00000 ~no tag~
+6-4-05 00000 ~no tag~
+6-4-06 00000 ~no tag~
+6-4-07 00000 ~no tag~
+6-4-08 00000 ~no tag~
+6-4-09 00000 ~no tag~
+6-4-10 00000 ~no tag~
+6-4-11 00000 ~no tag~
+6-4-12 00000 ~no tag~
+6-4-13 00000 ~no tag~
+6-4-14 00000 ~no tag~
+6-4-15 00000 ~no tag~
+6-4-16 00000 ~no tag~
+6-4-17 00000 ~no tag~
+6-4-18 00000 ~no tag~
+6-4-19 00000 ~no tag~
+7-0-00 00000 ~no tag~
+7-0-01 00000 ~no tag~
+7-0-02 00000 ~no tag~
+7-0-03 00000 ~no tag~
+7-0-04 00000 ~no tag~
+7-0-05 00000 ~no tag~
+7-0-06 00000 ~no tag~
+7-0-07 00000 ~no tag~
+7-0-08 00000 ~no tag~
+7-0-09 00000 ~no tag~
+7-0-10 00000 ~no tag~
+7-0-11 00000 ~no tag~
+7-0-12 00000 ~no tag~
+7-0-13 00000 ~no tag~
+7-0-14 00000 ~no tag~
+7-0-15 00000 ~no tag~
+7-0-16 00000 ~no tag~
+7-0-17 00000 ~no tag~
+7-0-18 00000 ~no tag~
+7-0-19 00000 ~no tag~
+7-1-00 00000 ~no tag~
+7-1-01 00000 ~no tag~
+7-1-02 00000 ~no tag~
+7-1-03 00000 ~no tag~
+7-1-04 00000 ~no tag~
+7-1-05 00000 ~no tag~
+7-1-06 00000 ~no tag~
+7-1-07 00000 ~no tag~
+7-1-08 00000 ~no tag~
+7-1-09 00000 ~no tag~
+7-1-10 00000 ~no tag~
+7-1-11 00000 ~no tag~
+7-1-12 00000 ~no tag~
+7-1-13 00000 ~no tag~
+7-1-14 00000 ~no tag~
+7-1-15 00000 ~no tag~
+7-1-16 00000 ~no tag~
+7-1-17 00000 ~no tag~
+7-1-18 00000 ~no tag~
+7-1-19 00000 ~no tag~
+7-2-00 00000 ~no tag~
+7-2-01 00000 ~no tag~
+7-2-02 00000 ~no tag~
+7-2-03 00000 ~no tag~
+7-2-04 00000 ~no tag~
+7-2-05 00000 ~no tag~
+7-2-06 00000 ~no tag~
+7-2-07 00000 ~no tag~
+7-2-08 00000 ~no tag~
+7-2-09 00000 ~no tag~
+7-2-10 00000 ~no tag~
+7-2-11 00000 ~no tag~
+7-2-12 00000 ~no tag~
+7-2-13 00000 ~no tag~
+7-2-14 00000 ~no tag~
+7-2-15 00000 ~no tag~
+7-2-16 00000 ~no tag~
+7-2-17 00000 ~no tag~
+7-2-18 00000 ~no tag~
+7-2-19 00000 ~no tag~
+7-3-00 00000 ~no tag~
+7-3-01 00000 ~no tag~
+7-3-02 00000 ~no tag~
+7-3-03 00000 ~no tag~
+7-3-04 00000 ~no tag~
+7-3-05 00000 ~no tag~
+7-3-06 00000 ~no tag~
+7-3-07 00000 ~no tag~
+7-3-08 00000 ~no tag~
+7-3-09 00000 ~no tag~
+7-3-10 00000 ~no tag~
+7-3-11 00000 ~no tag~
+7-3-12 00000 ~no tag~
+7-3-13 00000 ~no tag~
+7-3-14 00000 ~no tag~
+7-3-15 00000 ~no tag~
+7-3-16 00000 ~no tag~
+7-3-17 00000 ~no tag~
+7-3-18 00000 ~no tag~
+7-3-19 00000 ~no tag~
+7-4-00 00000 ~no tag~
+7-4-01 00000 ~no tag~
+7-4-02 00000 ~no tag~
+7-4-03 00000 ~no tag~
+7-4-04 00000 ~no tag~
+7-4-05 00000 ~no tag~
+7-4-06 00000 ~no tag~
+7-4-07 00000 ~no tag~
+7-4-08 00000 ~no tag~
+7-4-09 00000 ~no tag~
+7-4-10 00000 ~no tag~
+7-4-11 00000 ~no tag~
+7-4-12 00000 ~no tag~
+7-4-13 00000 ~no tag~
+7-4-14 00000 ~no tag~
+7-4-15 00000 ~no tag~
+7-4-16 00000 ~no tag~
+7-4-17 00000 ~no tag~
+7-4-18 00000 ~no tag~
+7-4-19 00000 ~no tag~
+8-0-00 00000 ~no tag~
+8-0-01 00000 ~no tag~
+8-0-02 00000 ~no tag~
+8-0-03 00000 ~no tag~
+8-0-04 00000 ~no tag~
+8-0-05 00000 ~no tag~
+8-0-06 00000 ~no tag~
+8-0-07 00000 ~no tag~
+8-0-08 00000 ~no tag~
+8-0-09 00000 ~no tag~
+8-0-10 00000 ~no tag~
+8-0-11 00000 ~no tag~
+8-0-12 00000 ~no tag~
+8-0-13 00000 ~no tag~
+8-0-14 00000 ~no tag~
+8-0-15 00000 ~no tag~
+8-0-16 00000 ~no tag~
+8-0-17 00000 ~no tag~
+8-0-18 00000 ~no tag~
+8-0-19 00000 ~no tag~
+8-1-00 00000 ~no tag~
+8-1-01 00000 ~no tag~
+8-1-02 00000 ~no tag~
+8-1-03 00000 ~no tag~
+8-1-04 00000 ~no tag~
+8-1-05 00000 ~no tag~
+8-1-06 00000 ~no tag~
+8-1-07 00000 ~no tag~
+8-1-08 00000 ~no tag~
+8-1-09 00000 ~no tag~
+8-1-10 00000 ~no tag~
+8-1-11 00000 ~no tag~
+8-1-12 00000 ~no tag~
+8-1-13 00000 ~no tag~
+8-1-14 00000 ~no tag~
+8-1-15 00000 ~no tag~
+8-1-16 00000 ~no tag~
+8-1-17 00000 ~no tag~
+8-1-18 00000 ~no tag~
+8-1-19 00000 ~no tag~
+8-2-00 00000 ~no tag~
+8-2-01 00000 ~no tag~
+8-2-02 00000 ~no tag~
+8-2-03 00000 ~no tag~
+8-2-04 00000 ~no tag~
+8-2-05 00000 ~no tag~
+8-2-06 00000 ~no tag~
+8-2-07 00000 ~no tag~
+8-2-08 00000 ~no tag~
+8-2-09 00000 ~no tag~
+8-2-10 00000 ~no tag~
+8-2-11 00000 ~no tag~
+8-2-12 00000 ~no tag~
+8-2-13 00000 ~no tag~
+8-2-14 00000 ~no tag~
+8-2-15 00000 ~no tag~
+8-2-16 00000 ~no tag~
+8-2-17 00000 ~no tag~
+8-2-18 00000 ~no tag~
+8-2-19 00000 ~no tag~
+8-3-00 00000 ~no tag~
+8-3-01 00000 ~no tag~
+8-3-02 00000 ~no tag~
+8-3-03 00000 ~no tag~
+8-3-04 00000 ~no tag~
+8-3-05 00000 ~no tag~
+8-3-06 00000 ~no tag~
+8-3-07 00000 ~no tag~
+8-3-08 00000 ~no tag~
+8-3-09 00000 ~no tag~
+8-3-10 00000 ~no tag~
+8-3-11 00000 ~no tag~
+8-3-12 00000 ~no tag~
+8-3-13 00000 ~no tag~
+8-3-14 00000 ~no tag~
+8-3-15 00000 ~no tag~
+8-3-16 00000 ~no tag~
+8-3-17 00000 ~no tag~
+8-3-18 00000 ~no tag~
+8-3-19 00000 ~no tag~
+8-4-00 00000 ~no tag~
+8-4-01 00000 ~no tag~
+8-4-02 00000 ~no tag~
+8-4-03 00000 ~no tag~
+8-4-04 00000 ~no tag~
+8-4-05 00000 ~no tag~
+8-4-06 00000 ~no tag~
+8-4-07 00000 ~no tag~
+8-4-08 00000 ~no tag~
+8-4-09 00000 ~no tag~
+8-4-10 00000 ~no tag~
+8-4-11 00000 ~no tag~
+8-4-12 00000 ~no tag~
+8-4-13 00000 ~no tag~
+8-4-14 00000 ~no tag~
+8-4-15 00000 ~no tag~
+8-4-16 00000 ~no tag~
+8-4-17 00000 ~no tag~
+8-4-18 00000 ~no tag~
+8-4-19 00000 ~no tag~
+9-0-00 00000 ~no tag~
+9-0-01 00000 ~no tag~
+9-0-02 00000 ~no tag~
+9-0-03 00000 ~no tag~
+9-0-04 00000 ~no tag~
+9-0-05 00000 ~no tag~
+9-0-06 00000 ~no tag~
+9-0-07 00000 ~no tag~
+9-0-08 00000 ~no tag~
+9-0-09 00000 ~no tag~
+9-0-10 00000 ~no tag~
+9-0-11 00000 ~no tag~
+9-0-12 00000 ~no tag~
+9-0-13 00000 ~no tag~
+9-0-14 00000 ~no tag~
+9-0-15 00000 ~no tag~
+9-0-16 00000 ~no tag~
+9-0-17 00000 ~no tag~
+9-0-18 00000 ~no tag~
+9-0-19 00000 ~no tag~
+9-1-00 00000 ~no tag~
+9-1-01 00000 ~no tag~
+9-1-02 00000 ~no tag~
+9-1-03 00000 ~no tag~
+9-1-04 00000 ~no tag~
+9-1-05 00000 ~no tag~
+9-1-06 00000 ~no tag~
+9-1-07 00000 ~no tag~
+9-1-08 00000 ~no tag~
+9-1-09 00000 ~no tag~
+9-1-10 00000 ~no tag~
+9-1-11 00000 ~no tag~
+9-1-12 00000 ~no tag~
+9-1-13 00000 ~no tag~
+9-1-14 00000 ~no tag~
+9-1-15 00000 ~no tag~
+9-1-16 00000 ~no tag~
+9-1-17 00000 ~no tag~
+9-1-18 00000 ~no tag~
+9-1-19 00000 ~no tag~
+9-2-00 00000 ~no tag~
+9-2-01 00000 ~no tag~
+9-2-02 00000 ~no tag~
+9-2-03 00000 ~no tag~
+9-2-04 00000 ~no tag~
+9-2-05 00000 ~no tag~
+9-2-06 00000 ~no tag~
+9-2-07 00000 ~no tag~
+9-2-08 00000 ~no tag~
+9-2-09 00000 ~no tag~
+9-2-10 00000 ~no tag~
+9-2-11 00000 ~no tag~
+9-2-12 00000 ~no tag~
+9-2-13 00000 ~no tag~
+9-2-14 00000 ~no tag~
+9-2-15 00000 ~no tag~
+9-2-16 00000 ~no tag~
+9-2-17 00000 ~no tag~
+9-2-18 00000 ~no tag~
+9-2-19 00000 ~no tag~
+9-3-00 00000 ~no tag~
+9-3-01 00000 ~no tag~
+9-3-02 00000 ~no tag~
+9-3-03 00000 ~no tag~
+9-3-04 00000 ~no tag~
+9-3-05 00000 ~no tag~
+9-3-06 00000 ~no tag~
+9-3-07 00000 ~no tag~
+9-3-08 00000 ~no tag~
+9-3-09 00000 ~no tag~
+9-3-10 00000 ~no tag~
+9-3-11 00000 ~no tag~
+9-3-12 00000 ~no tag~
+9-3-13 00000 ~no tag~
+9-3-14 00000 ~no tag~
+9-3-15 00000 ~no tag~
+9-3-16 00000 ~no tag~
+9-3-17 00000 ~no tag~
+9-3-18 00000 ~no tag~
+9-3-19 00000 ~no tag~
+9-4-00 00000 ~no tag~
+9-4-01 00000 ~no tag~
+9-4-02 00000 ~no tag~
+9-4-03 00000 ~no tag~
+9-4-04 00000 ~no tag~
+9-4-05 00000 ~no tag~
+9-4-06 00000 ~no tag~
+9-4-07 00000 ~no tag~
+9-4-08 00000 ~no tag~
+9-4-09 00000 ~no tag~
+9-4-10 00000 ~no tag~
+9-4-11 00000 ~no tag~
+9-4-12 00000 ~no tag~
+9-4-13 00000 ~no tag~
+9-4-14 00000 ~no tag~
+9-4-15 00000 ~no tag~
+9-4-16 00000 ~no tag~
+9-4-17 00000 ~no tag~
+9-4-18 00000 ~no tag~
+9-4-19 00000 ~no tag~
+SR2 02 856.73750 AM, 859.26250 AM, 857.31250 AM, 857.31250 AM, 857.31250 AM, 857.31250 AM, 857.31250 AM, 857.31250 AM, 857.31250 AM, 857.31250 AM
+SR3 01 130.11250 AM, 112.43750 AM
+SR4 02 145.55500 AM, 146.84000 AM
+SR5 00 
+CB Chan#1 AM D
+CB Chan#2 AM D
+CB Chan#3 AM D
+CB Chan#4 AM D
+CB Chan#5 AM D
+CB Chan#6 AM D
+CB Chan#7 AM D
+CB Chan#8 AM D
+CB Chan#9 AM D
+CB Chan#10 AM D
+CB Chan#11 AM D
+CB Chan#12 AM AD
+CB Chan#13 AM D
+CB Chan#14 AM D
+CB Chan#15 AM D
+CB Chan#16 AM D
+CB Chan#17 AM D
+CB Chan#18 AM D
+CB Chan#19 AM D
+CB Chan#20 AM D
+CB Chan#21 AM D
+CB Chan#22 AM D
+CB Chan#23 AM D
+CB Chan#24 AM D
+CB Chan#25 AM D
+CB Chan#26 AM D
+CB Chan#27 AM D
+CB Chan#28 AM D
+CB Chan#29 AM D
+CB Chan#30 AM D
+CB Chan#31 AM D
+CB Chan#32 AM D
+CB Chan#33 AM D
+CB Chan#34 AM DL
+CB Chan#35 AM D
+CB Chan#36 AM D
+CB Chan#37 AM D
+CB Chan#38 AM D
+CB Chan#39 AM D
+CB Chan#40 AM D
+Marine Chan#1 FM D
+Marine Chan#2 FM D
+Marine Chan#3 FM D
+Marine Chan#4 FM D
+Marine Chan#5 FM D
+Marine Chan#6 FM D
+Marine Chan#7 FM D
+Marine Chan#8 FM D
+Marine Chan#9 FM D
+Marine Chan#10 FM D
+Marine Chan#11 FM D
+Marine Chan#12 FM D
+Marine Chan#13 FM DL
+Marine Chan#14 FM D
+Marine Chan#15 FM D
+Marine Chan#16 FM D
+Marine Chan#17 FM D
+Marine Chan#18 FM D
+Marine Chan#19 FM D
+Marine Chan#20 FM D
+Marine Chan#21 FM D
+Marine Chan#22 FM D
+Marine Chan#23 FM D
+Marine Chan#24 FM D
+Marine Chan#25 FM D
+Marine Chan#26 FM D
+Marine Chan#27 FM D
+Marine Chan#28 FM D
+Marine Chan#29 FM D
+Marine Chan#30 FM D
+Marine Chan#31 FM D
+Marine Chan#32 FM D
+Marine Chan#33 FM D
+Marine Chan#34 FM D
+Marine Chan#35 FM D
+Marine Chan#36 FM D
+Marine Chan#37 FM D
+Marine Chan#38 FM D
+Marine Chan#39 FM D
+Marine Chan#40 FM D
+Marine Chan#41 FM D
+Marine Chan#42 FM D
+Marine Chan#43 FM D
+Marine Chan#44 FM D
+Marine Chan#45 FM D
+Marine Chan#46 FM D
+Marine Chan#47 FM D
+Marine Chan#48 FM D
+Marine Chan#49 FM D
+Marine Chan#50 FM D
+Marine Chan#51 FM D
+Marine Chan#52 FM D
+Marine Chan#53 FM D
+Marine Chan#54 FM D
+Marine Chan#55 FM D
+Marine Chan#56 FM D
+Marine Chan#57 FM D
+Marine Chan#58 FM D
+Marine Chan#59 FM D
+Marine Chan#60 FM D
+Bank 0:             
+Bank 1:             
+Bank 2:             
+Bank 3:             
+Bank 4:             
+Bank 5:             
+Bank 6:             
+Bank 7:             
+Bank 8:             
+Bank 9: HAM REPEATER
+Limit Search Text: Limit Search
+Limit Search Range: 47.04000 AM - 47.38000 AM
+Priority Channel: 162.55000 FM

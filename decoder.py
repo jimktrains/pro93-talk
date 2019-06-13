@@ -72,20 +72,35 @@ def set_bits(b, first, last, v):
     # we need to shift the result down into the least sig bits.
     return b | ((v & (mask >> (7-last))) << (7 - last))
 
-class freq_memory:
-    def __init__(self, freq, mode=None, atten=None, delay=None, lockout=None, unused=None):
+class channel:
+    def __init__(self, freq, flags):
+        self.freq = freq
+        self.flags = flags
+
+    def __repr__(self):
+        return f"{self.freq} {self.flags}".strip()
+
+    def encode(self):
+        fr = bytearray(self.freq.encode())
+        fl = bytearray(self.flags.encode())
+        return fr + fl
+
+    @classmethod
+    def decode(cls, bs):
+        freq = frequency.decode(bs[0:3])
+        flags = chan_flags.decode(bytearray([bs[3]]))
+        return cls(freq=freq, flags=flags)
+
+class chan_flags:
+    def __init__(self, mode=None, atten=None, delay=None, lockout=None):
         self.mode = mode
         self.atten = atten
         self.delay = delay
         self.lockout = lockout
-        self.freq = freq
-        self.unused = unused
+
     def __repr__(self):
-        if self.unused:
-            return "-"
-        formatted_freq =f"{self.freq/1000000.0:10.05f}"
-        r = f"{formatted_freq:>10}" + " " 
-        if self.mode:
+        r = ''
+        if self.mode is not None:
             r += mode_map[self.mode] + " "
         if self.atten:
             r += "A"
@@ -94,25 +109,46 @@ class freq_memory:
         if self.lockout:
             r += "L"
         return r.strip()
+
     def encode(self):
-        f = int(self.freq / 250)
-        bs = bytearray(struct.pack("<L", f))
-        bs[3] = 0
+        bs = bytearray([0])
+        bs[0] = set_bits(bs[0], 6, 7, self.mode)
+        bs[0] = set_bits(bs[0], 5, 5, 1 if self.atten else 0 )
+        bs[0] = set_bits(bs[0], 4, 4, 1 if self.delay else 0 )
+        bs[0] = set_bits(bs[0], 3, 3, 1 if self.lockout else 0)
         return bs
 
 
     @classmethod
     def decode(cls, bs):
-        mode = None
-        atten = None
-        delay = None
-        lockout = None
-        if len(bs) == 4:
-            mode = extract_bits(bs[3], 6, 7)
-            atten = 1 == extract_bits(bs[3], 5, 5)
-            delay = 1 == extract_bits(bs[3], 4, 4)
-            lockout = 1 == extract_bits(bs[3], 3, 3)
+        mode = extract_bits(bs[0], 6, 7)
+        atten = 1 == extract_bits(bs[0], 5, 5)
+        delay = 1 == extract_bits(bs[0], 4, 4)
+        lockout = 1 == extract_bits(bs[0], 3, 3)
 
+        return cls(mode=mode, atten=atten, delay=delay, lockout=lockout)
+
+class frequency:
+    def __init__(self, freq, unused):
+        self.freq = freq
+        self.unused = unused
+
+    def __repr__(self):
+        if self.unused:
+            return "-"
+        formatted_freq =f"{self.freq/1000000.0:10.05f}"
+        r = f"{formatted_freq:>10}" + " "
+        return r.strip()
+
+    def encode(self):
+        f = int(self.freq / 250)
+        bs = bytearray(struct.pack("<L", f))
+        del bs[3]
+        return bs
+
+
+    @classmethod
+    def decode(cls, bs):
         # 3 bytes of a 4 byte Little Endian Integer are the first 3 bytes
         ef = bytearray(bs[0:3])
         ef.append(0)
@@ -129,7 +165,7 @@ class freq_memory:
         # within range of this scanner.
         unused = freq in [148034250, 4194303750]
 
-        return cls(mode=mode, atten=atten, delay=delay, lockout=lockout, freq=freq, unused=unused)
+        return cls(freq=freq, unused=unused)
 
 
 class text_tag:
@@ -141,6 +177,11 @@ class text_tag:
             return '~no tag~'
         return self.tag
 
+    def encode(self):
+        if self.tag is None:
+            return bytes([0xff]) * 12
+        return self.tag.encode('ascii')[0:12]
+
     @classmethod
     def decode(cls, tag):
         ttag = None
@@ -151,8 +192,13 @@ class text_tag:
 class talk_group:
     def __init__(self, tgid):
         self.tgid = tgid
+
     def __repr__(self):
         return f"{self.tgid:05}"
+
+    def encode(self):
+        bs = bytearray(struct.pack("<H", self.tgid))
+        return bs
 
     @classmethod
     def decode(cls, bs):
