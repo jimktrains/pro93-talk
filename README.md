@@ -26,7 +26,7 @@ of the image) and is 20256 bytes long.
 * Memory Slot config (4 bytes * 300)
 * Memory Slot labels (12 bytes * 300)
 * TalkGroup Slot Config (((100\*2 bytes) + 24) \* 10)
-* TalkGroup Something? (808 bytes)
+* Search Group Lockouts (4 \* ((50 \* 4) + 2))
 * TalkGroup Slot labels (12 bytes \* 1000)
 * CB Lockout (40 \* 1 byte)
 * Unsure? (64 bytes)
@@ -146,5 +146,30 @@ presume it's always "shown" but spaces make it invisible.
 ## Example
 
 See
-[pro93-dump-2019-06-13T05:09:06.494256.parsed](pro93-dump-2019-06-13T05:09:06.494256.parsed)
+[pro93-dump-2019-06-13T05:09:06.494256.parsed](./pro93-dump-2019-06-13T05:09:06.494256.parsed)
 for an example of the output of the pro93-dump-explore program.
+
+## Mystery and Outstanding
+
+This diff was obtained from two sequential dumps from the scanner with no changes in between via
+
+    diff <(xxd -c 12 pro93-dump-2019-06-12T23:09:17.548718.bin) <(xxd -c 12 pro93-dump-2019-06-12T23:24:28.168973.bin)
+
+An subsequent dump was identical to pro93-dump-2019-06-12T23:24:28.168973.bin
+
+    diff <(xxd -c 12 pro93-dump-2019-06-12T23:24:28.168973.bin) <(xxd -c 12 pro93-dump-2019-06-12T23:29:47.925511.bin) 
+
+I'm not sure what these values represent.
+
+    1681c1681
+    < 00004ec0: 0005 0009 1407 90e0 0209 0092  ............
+    ---
+    > 00004ec0: 0505 0009 1407 90e0 0209 0092  ............
+    1683c1683
+    < 00004ed8: 0708 f0d9 0809 c8df 0289 6309  ..........c.
+    ---
+    > 00004ed8: 0708 f0d9 0809 a8e1 0289 4a09  ..........J.
+
+I'm also not sure what all of the "Unsure" sections are for, but at this point
+I'm willing to move forward with writing something to generate an image and
+upload it.
