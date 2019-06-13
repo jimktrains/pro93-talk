@@ -78,6 +78,8 @@ In my dump, each bank is followed by
 
     000000000000000000647c01c0c71800d007000000000000
 
+I'm not sure what this is? Perhaps the fleetmap is in here somewhere?
+
 ### Search Channel Lockout
 
 The search channel lock out has `ffXXYY...YY` where `XX` is the number of
