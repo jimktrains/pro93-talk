@@ -133,9 +133,18 @@ The ordering seems to be
 Each CB channel is represented by 1 byte. 4th MSB is lockout, bottom 2 LSB are
 mode. I assume attenuation and delay are in their usual spots.
 
+### Channel Name Set
+
+38 bytes (really 37.5 for 300 bits) of 1-bit flags (0=custom name) if the
+channel has a custom name.  Channels are stored with the lowest in the lsb,
+e.g. if the first byte is 0x7E => 11101110 => channel 0 and 4 have custom text tags.
+
+     76543210
+     11101110
+
 ### Unsure?
 
-64 bytes, not sure?
+26 bytes, not sure?
 
 ### Marine Lockout
 
@@ -171,8 +180,17 @@ presume it's always "shown" but spaces make it invisible.
 
 4 bytes for the priority frequency
 
+### Scan channels selected
+
+2 bytes of 1-bit fields, 1 = selected. Lowest channel in LSB. e.g: A203 =>
+10100010 00000011 which means channels 1, 5, 7, 8 and 9 are selected
+
+    76543210 XXXXXX98
+    10100010 00000011
+
+
 ### Unsure?
-46 bytes, not sure?
+44 bytes, not sure?
 
 ## Example
 
