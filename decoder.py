@@ -10,6 +10,8 @@ mode_map = {
     3:"ED",
 }
 
+inv_mode_map = inv_map = {v: k for k, v in mode_map.items()}
+
 def extract_bits(b, first, last):
     """
 ###################################################################

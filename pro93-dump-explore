@@ -2,6 +2,7 @@
 
 import struct
 import decoder
+import csv
 
 bank_radix = 100
 banks = 10
@@ -118,9 +119,18 @@ with open(fn, 'rb') as f:
     bs = f.read(4)
     priority = decoder.channel.decode(bs)
 
-for i in range(channels):
-    memory_slot = decoder.index_to_memory_slot(i, channels_per_bank, bank_radix)
-    print(f"memory[{i}] {memory_slot:03d} {memory[i]} {text_tags[i]}")
+with open(fn + ".channels.csv", 'w') as csvfile:
+    spamwriter = csv.writer(csvfile)
+    spamwriter.writerow(["i", "memory_slot", "text_tag", "freq", "unused",
+        "delay", "attenuated", "lockout", "mode"])
+    for i in range(channels):
+        memory_slot = decoder.index_to_memory_slot(i, channels_per_bank, bank_radix)
+        memory_slot = f"{memory_slot:03d}"
+        print(f"memory[{i}] {memory_slot} {memory[i]} {text_tags[i]}")
+        mem = memory[i]
+        spamwriter.writerow([i, memory_slot, text_tags[i], mem.freq.freq, mem.freq.unused,
+            mem.flags.delay, mem.flags.atten, mem.flags.lockout,
+            decoder.mode_map[mem.flags.mode]])
 
 for i in range(talkgroups):
     tg_id = decoder.index_to_tg_memory_slot(i, tg_mem_per_sub_bank, tg_sub_banks_per_bank)
@@ -136,8 +146,12 @@ for i in range(cb_channels_count):
 for i in range(marine_channels_count):
     print(f"Marine Chan#{i+1} {marine_channels[i]}")
 
-for i in range(banks):
-    print(f"Bank {i}: {bank_text_tags[i]}")
+with open(fn + ".bank_names.csv", 'w') as csvfile:
+    spamwriter = csv.writer(csvfile)
+    spamwriter.writerow(["i", "name"])
+    for i in range(banks):
+        print(f"Bank {i}: {bank_text_tags[i]}")
+        spamwriter.writerow([i, bank_text_tags[i]])
 print(f"Limit Search Text: {limit_search_text_tag}")
 print(f"Limit Search Range: {limit_search_low} - {limit_search_high}")
 print(f"Priority Channel: {priority}")

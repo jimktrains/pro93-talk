@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+
+import argparse
+import csv
+import decoder
+import mmap
+import datetime
+import shutil
+
+parser = argparse.ArgumentParser(description='Builds an image.')
+parser.add_argument('base_image', help='base image to pull all other fields from')
+parser.add_argument('channel_csv', help='channel CSV')
+parser.add_argument('bank_name', help='bank name CSV')
+args = parser.parse_args()
+
+infilename = args.base_image
+dt = datetime.datetime.now().isoformat()
+outfilename = f"{args.base_image}.{dt}.image"
+
+channels = []
+channel_tags = []
+with open(args.channel_csv) as channelfile:
+    channelreader = csv.reader(channelfile)
+    found_headers = False
+    for row in channelreader:
+        if not found_headers:
+            found_headers = True
+            continue
+        #0,1           2        3    4      5     6          7       8
+        #i,memory_slot,text_tag,freq,unused,delay,attenuated,lockout,mode
+        flags = decoder.chan_flags(
+                mode=decoder.inv_mode_map[row[8]], 
+                atten=row[6] == 'True', 
+                delay=row[5] == 'True', 
+                lockout=row[7] == 'True')
+        freq = decoder.frequency(freq=int(row[3]), unused=row[4] == 'True')
+        channel = decoder.channel(freq=freq, flags=flags)
+        channels.append(channel)
+        text_tag = None
+        if row[2] != '' and row[2] is not None and row[2] != '~no tag~':
+            text_tag = row[2]
+        channel_tags.append(decoder.text_tag(text_tag))
+
+with open(outfilename, "wb") as outfile:
+    with open(infilename, "rb") as infile:
+        outfile.write(infile.read())
+    outfile.seek(0)
+    for channel in channels:
+        outfile.write(channel.encode())
+    for tag in channel_tags:
+        outfile.write(tag.encode())
+    outfile.seek(0x4e3c)

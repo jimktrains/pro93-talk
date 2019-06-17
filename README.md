@@ -6,6 +6,35 @@ Many, many thanks to [tk92](http://parnass.com/tk92/index.html) by Bob Parnass
 for providing information on how to setup the serial port and initiate
 communications.
 
+## Applications
+
+### pro93-dump
+
+Dumps an image of the pro93's memory to a file.
+
+### pro93-write
+
+Writes the contents of an image to the pro93.
+
+### pro93-dump-explore
+
+Decodes an image and writes a summary to standard out.  Also writes out
+CSVs of the channels and bank names.  CSVs of options is a TODO.
+
+### pro93-dump-create
+
+Takes a base image, the channel csv, and the bank name csv and produced a new
+image.
+
+### encode-freq
+
+Utility that takes the (or a list of) image-format frequency and prints the
+corropsonding frequncy and flags.
+
+### encode-freq
+
+Takes a frequncy in MHz and produces the image-formatted value.
+
 ## Serial Setup
 
 4800 baud, 8 bit data, even parity, 2 stop bits, xon/xoff off, RTS/CTS off, DSR/DTR on

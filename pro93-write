@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+
+import serial
+import time
+import sys
+import datetime
+import argparse
+
+parser = argparse.ArgumentParser(description='writes an image.')
+parser.add_argument('infile', help='writes an image out')
+args = parser.parse_args()
+
+serial_options = {
+    'port':'/dev/ttyUSB0',
+    'baudrate':4800,
+    'bytesize':8,
+    'parity':'O',
+    'stopbits':2,
+    'timeout':None,
+    'xonxoff':False,
+    'rtscts':False,
+    'dsrdtr':True
+}
+preamble = bytes.fromhex('a5' * 50)
+preamble2 = bytes.fromhex('01991352')
+
+image = None
+with open(args.infile, "rb") as f:
+    image = f.read()
+
+if image is None:
+    print("No image read")
+    sys.exit(1)
+
+# Reverse the image
+image = image[::-1]
+
+error_count = 0
+with serial.Serial(**serial_options) as port:
+    port.write(preamble)
+    print(port.read(50).hex())
+    time.sleep(0.1)
+    port.write(preamble2)
+    print(port.read(4).hex())
+    time.sleep(1)
+    for i in range(633):
+        s = i * 32
+        e = s + 32
+        section = image[s:e]
+        #print(f"S {s} {e} ")
+        #print("W " + section.hex())
+        port.write(section)
+        time.sleep(0.1)
+        readback = port.read(32)
+        #print("R " + readback.hex())
+        if section != readback:
+            print("ERROR! readback != written")
+            error_count += 1
+        print(f"{i} of 633 written")
+if error_count > 0:
+    print(f"Errors: {error_count}")
