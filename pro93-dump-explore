@@ -3,6 +3,11 @@
 import struct
 import decoder
 import csv
+import argparse
+
+parser = argparse.ArgumentParser(description='Decodes an image.')
+parser.add_argument('imagefile', help='Image file to decode')
+args = parser.parse_args()
 
 bank_radix = 100
 banks = 10
@@ -39,8 +44,7 @@ priority = None
 bank_text_tags = []
 limit_search_text_tag = None
 
-fn = 'pro93-dump-2019-06-10T13:09:35.841920.bin'
-fn = 'pro93-dump-2019-06-13T05:09:06.494256.bin'
+fn = args.imagefile
 with open(fn, 'rb') as f:
 
     for i in range(channels):
@@ -127,10 +131,35 @@ with open(fn + ".channels.csv", 'w') as csvfile:
         memory_slot = decoder.index_to_memory_slot(i, channels_per_bank, bank_radix)
         memory_slot = f"{memory_slot:03d}"
         print(f"memory[{i}] {memory_slot} {memory[i]} {text_tags[i]}")
-        mem = memory[i]
-        spamwriter.writerow([i, memory_slot, text_tags[i], mem.freq.freq, mem.freq.unused,
-            mem.flags.delay, mem.flags.atten, mem.flags.lockout,
-            decoder.mode_map[mem.flags.mode]])
+        freq = memory[i].freq
+        flags = memory[i].flags
+
+        unused = freq.unused
+        ffreq = None
+        delay = None
+        atten = None
+        lockout = None
+        mode = None
+        text_tag = None
+        if not unused:
+            ffreq = str(freq.freq)
+            delay = flags.delay
+            atten = flags.atten
+            lockout = flags.lockout
+            mode = decoder.mode_map[flags.mode]
+            text_tag = text_tags[i]
+
+        spamwriter.writerow([
+            i,
+            "'" + memory_slot, # GD Lotus 1-2-3, and then Excel, and not LibreOffice Calc
+            unused,
+            text_tag,
+            ffreq,
+            delay,
+            atten,
+            lockout,
+            mode
+        ])
 
 for i in range(talkgroups):
     tg_id = decoder.index_to_tg_memory_slot(i, tg_mem_per_sub_bank, tg_sub_banks_per_bank)

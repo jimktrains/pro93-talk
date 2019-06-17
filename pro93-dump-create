@@ -19,6 +19,7 @@ outfilename = f"{args.base_image}.{dt}.image"
 
 channels = []
 channel_tags = []
+bank_names = []
 with open(args.channel_csv) as channelfile:
     channelreader = csv.reader(channelfile)
     found_headers = False
@@ -26,20 +27,42 @@ with open(args.channel_csv) as channelfile:
         if not found_headers:
             found_headers = True
             continue
-        #0,1           2        3    4      5     6          7       8
-        #i,memory_slot,text_tag,freq,unused,delay,attenuated,lockout,mode
+        #0,1           2      3        4    5     6          7       8
+        #i,memory_slot,unused,text_tag,freq,delay,attenuated,lockout,mode
+        mode = 0
+        atten = False
+        delay = False
+        lockout = False
+        freq = 148034250 # x090909, e.g. unused
+
+        unused=row[2] != 'False'
+        if not unused:
+            mode = decoder.inv_mode_map[row[8]], 
+            atten = row[6] != 'True', 
+            delay = row[5] != 'True', 
+            lockout = row[7] != 'True'
+            freq = int(row[3])
+
         flags = decoder.chan_flags(
-                mode=decoder.inv_mode_map[row[8]], 
-                atten=row[6] == 'True', 
-                delay=row[5] == 'True', 
-                lockout=row[7] == 'True')
-        freq = decoder.frequency(freq=int(row[3]), unused=row[4] == 'True')
+                mode=mode,
+                atten=atten,
+                delay=delay,
+                lockout=lockout
+        )
+        freq = decoder.frequency(freq=freq, unused=unused)
         channel = decoder.channel(freq=freq, flags=flags)
         channels.append(channel)
-        text_tag = None
-        if row[2] != '' and row[2] is not None and row[2] != '~no tag~':
-            text_tag = row[2]
-        channel_tags.append(decoder.text_tag(text_tag))
+        # validation and cleanup is in the decoder
+        channel_tags.append(decoder.text_tag(row[2]))
+
+with open(args.bank_names) as bnfile:
+    bnreader = csv.reader(bnfile)
+    found_headers = False
+    for row in bnreader:
+        if not found_headers:
+            found_headers = True
+            continue
+        bank_names.append(decoder.text_tag(row[1]))
 
 with open(outfilename, "wb") as outfile:
     with open(infilename, "rb") as infile:
@@ -50,3 +73,5 @@ with open(outfilename, "wb") as outfile:
     for tag in channel_tags:
         outfile.write(tag.encode())
     outfile.seek(0x4e3c)
+    for bank_name in bank_names:
+        outfile.write(bank_name.encode())

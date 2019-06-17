@@ -134,6 +134,7 @@ class frequency:
     def __init__(self, freq, unused):
         self.freq = freq
         self.unused = unused
+        # TODO: validate that it's within the freq ranges an steps allowed
 
     def __repr__(self):
         if self.unused:
@@ -180,9 +181,15 @@ class text_tag:
         return self.tag
 
     def encode(self):
-        if self.tag is None:
+        if self.tag is None or self.tag == '' or self.tag == '~no tag~':
             return bytes([0xff]) * 12
-        return self.tag.encode('ascii')[0:12]
+        # TODO check if lower case or other symbols are allowed
+        allowed_chars = re.compile("[A-Z0-9 .-#_@+*&/,]")
+        tag = allowed_chars.upper().sub(' ', self.tag)
+        # pad with spaces, encode, and trim, this _must_ always be exactly 12
+        # bytes of ascii text, unless the first byte is 0ff.
+        tag = f"{tag:12}"
+        return tag.encode('ascii')[0:12]
 
     @classmethod
     def decode(cls, tag):

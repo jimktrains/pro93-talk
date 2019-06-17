@@ -10,8 +10,14 @@ sys.argv.pop(0)
 for i in sys.argv:
     bs = bytes.fromhex(i)
     mem = None
+    freq = None
     if len(bs) == 3:
         mem=decoder.frequency.decode(bs)
+        freq = mem
     elif len(bs) == 4:
         mem=decoder.channel.decode(bs)
-    print(bs.hex() + " => " + str(mem))
+        freq = mem.freq
+    ffreq = str(mem)
+    if freq.unused:
+        ffreq += f" ({freq.freq})" 
+    print(f"{bs.hex()}  => {ffreq}")
