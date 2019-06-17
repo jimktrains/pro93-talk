@@ -6,11 +6,12 @@ import decoder
 import mmap
 import datetime
 import shutil
+import re
 
 parser = argparse.ArgumentParser(description='Builds an image.')
 parser.add_argument('base_image', help='base image to pull all other fields from')
 parser.add_argument('channel_csv', help='channel CSV')
-parser.add_argument('bank_name', help='bank name CSV')
+parser.add_argument('bank_names_csv', help='bank name CSV')
 args = parser.parse_args()
 
 infilename = args.base_image
@@ -27,20 +28,21 @@ with open(args.channel_csv) as channelfile:
         if not found_headers:
             found_headers = True
             continue
-        #0,1           2      3        4    5     6          7       8
-        #i,memory_slot,unused,text_tag,freq,delay,attenuated,lockout,mode
+        #0,1           2        3    4     5          6       7
+        #i,memory_slot,text_tag,freq,delay,attenuated,lockout,mode
         mode = 0
         atten = False
         delay = False
         lockout = False
         freq = 148034250 # x090909, e.g. unused
 
-        unused=row[2] != 'False'
+        # If there is a frequency, then it's not unused
+        unused = row[3].strip() == ''
         if not unused:
-            mode = decoder.inv_mode_map[row[8]], 
-            atten = row[6] != 'True', 
-            delay = row[5] != 'True', 
-            lockout = row[7] != 'True'
+            mode = decoder.inv_mode_map[row[7]]
+            lockout = row[6] == 'True'
+            atten = row[5] == 'True'
+            delay = row[4] == 'True'
             freq = int(row[3])
 
         flags = decoder.chan_flags(
@@ -55,7 +57,7 @@ with open(args.channel_csv) as channelfile:
         # validation and cleanup is in the decoder
         channel_tags.append(decoder.text_tag(row[2]))
 
-with open(args.bank_names) as bnfile:
+with open(args.bank_names_csv) as bnfile:
     bnreader = csv.reader(bnfile)
     found_headers = False
     for row in bnreader:

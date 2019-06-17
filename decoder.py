@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import struct
+import re
 
 mode_map = {
     0:"AM",
@@ -184,12 +185,16 @@ class text_tag:
         if self.tag is None or self.tag == '' or self.tag == '~no tag~':
             return bytes([0xff]) * 12
         # TODO check if lower case or other symbols are allowed
-        allowed_chars = re.compile("[A-Z0-9 .-#_@+*&/,]")
-        tag = allowed_chars.upper().sub(' ', self.tag)
+        disallowed_chars = re.compile("[^A-Z0-9 .\-#_@+*&/,]")
+        otag = self.tag.upper().strip()
+        tag = disallowed_chars.sub(' ', otag)
         # pad with spaces, encode, and trim, this _must_ always be exactly 12
         # bytes of ascii text, unless the first byte is 0ff.
-        tag = f"{tag:12}"
-        return tag.encode('ascii')[0:12]
+        tag = f"{tag:12}"[0:12]
+        if otag != tag.strip():
+            print(f"Rewriting tag '{otag}' to '{tag.strip()}'")
+        tag = tag.encode('ascii')
+        return tag
 
     @classmethod
     def decode(cls, tag):

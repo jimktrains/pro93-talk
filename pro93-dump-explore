@@ -125,7 +125,7 @@ with open(fn, 'rb') as f:
 
 with open(fn + ".channels.csv", 'w') as csvfile:
     spamwriter = csv.writer(csvfile)
-    spamwriter.writerow(["i", "memory_slot", "text_tag", "freq", "unused",
+    spamwriter.writerow(["i", "memory_slot", "text_tag", "freq",
         "delay", "attenuated", "lockout", "mode"])
     for i in range(channels):
         memory_slot = decoder.index_to_memory_slot(i, channels_per_bank, bank_radix)
@@ -152,7 +152,6 @@ with open(fn + ".channels.csv", 'w') as csvfile:
         spamwriter.writerow([
             i,
             "'" + memory_slot, # GD Lotus 1-2-3, and then Excel, and not LibreOffice Calc
-            unused,
             text_tag,
             ffreq,
             delay,
