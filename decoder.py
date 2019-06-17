@@ -65,6 +65,8 @@ def set_bits(b, first, last, v):
 #  first <= last
 ###################################################################
 """
+    # TODO TODO TODO This is wrong. It doesn't set 0 bits
+    #
     # last + 1 because it's an inclusive it range and the `range` function
     # is exclusive
     #
@@ -74,6 +76,19 @@ def set_bits(b, first, last, v):
     # 7 - last because we're numbering from mostisg to leastsig and
     # we need to shift the result down into the least sig bits.
     return b | ((v & (mask >> (7-last))) << (7 - last))
+
+def make_has_label_bitfield(text_tags):
+    bf = bytearray([0x00] * 38)
+    for i, text_tag in enumerate(text_tags):
+        byi = i // 8
+        # lowest chan stored in the LSB
+        bti = 7 - (i % 8)
+
+        # can't set a 0 bit right now
+        if not text_tag.tag:
+            bf[byi] = set_bits(bf[byi], bti, bti, 1)
+    return bf
+
 
 class channel:
     def __init__(self, freq, flags):
@@ -175,6 +190,8 @@ class frequency:
 class text_tag:
     def __init__(self, tag):
         self.tag = tag
+        if self.tag is None or self.tag == '' or self.tag == '~no tag~':
+            self.tag = None
 
     def __repr__(self):
         if self.tag is None:
@@ -182,7 +199,7 @@ class text_tag:
         return self.tag
 
     def encode(self):
-        if self.tag is None or self.tag == '' or self.tag == '~no tag~':
+        if self.tag is None:
             return bytes([0xff]) * 12
         # TODO check if lower case or other symbols are allowed
         disallowed_chars = re.compile("[^A-Z0-9 .\-#_@+*&/,]")

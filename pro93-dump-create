@@ -41,8 +41,8 @@ with open(args.channel_csv) as channelfile:
         if not unused:
             mode = decoder.inv_mode_map[row[7]]
             lockout = row[6] == 'True'
-            atten = row[5] == 'True'
-            delay = row[4] == 'True'
+            atten = row[5] == 'True' 
+            delay = row[4] == 'True' 
             freq = int(row[3])
 
         flags = decoder.chan_flags(
@@ -74,6 +74,8 @@ with open(outfilename, "wb") as outfile:
         outfile.write(channel.encode())
     for tag in channel_tags:
         outfile.write(tag.encode())
+    outfile.seek(0x4db0)
+    outfile.write(decoder.make_has_label_bitfield(channel_tags))
     outfile.seek(0x4e3c)
     for bank_name in bank_names:
         outfile.write(bank_name.encode())
